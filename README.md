@@ -4,12 +4,14 @@
 
 ### Manual deployment
 
-Link to S3 bucket: [http://rs-aws-app.s3-website-eu-west-1.amazonaws.com/]
+Link to S3 bucket: [Follow link](http://rs-aws-app.s3-website-eu-west-1.amazonaws.com/)
+
 Link to CloudFront: -----
 
 ### Automated deployment
 
 Link to S3 bucket: -----
+
 Link to CloudFront: -----
 
 ## TODO
@@ -26,7 +28,7 @@ Link to CloudFront: -----
 
 ### 2.2 Automated deployment (serverless-finch + serverless single-page-app)
 
-- [ ]  **Add** and **configure** _serverless_ and _serverless-finch_ plugin. Add necessary npm script(s) to build and deploy your app from your machine in an automated way. (_See the_ [demo repo](https://github.com/boale/serverlessTestApp)). **Check** if everything works correctly for you. (_Please note, that after uploading an application's build to the S3 bucket you need to create manually a CloudFront invalidation_)
+- [x]  **Add** and **configure** _serverless_ and _serverless-finch_ plugin. Add necessary npm script(s) to build and deploy your app from your machine in an automated way. **Check** if everything works correctly for you. (_Please note, that after uploading an application's build to the S3 bucket you need to manually create a CloudFront invalidation_)
 
 - [ ] **Destroy** created AWS infrastructure (S3 bucket and CloudFront distribution) from the previous part and steps. **Make sure** nothing is left
 
