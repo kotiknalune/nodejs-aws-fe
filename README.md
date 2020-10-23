@@ -4,7 +4,7 @@
 
 ### Manual deployment
 
-Link to S3 bucket: http://rs-aws-app.s3-website-eu-west-1.amazonaws.com/
+Link to S3 bucket: [http://rs-aws-app.s3-website-eu-west-1.amazonaws.com/]
 Link to CloudFront: -----
 
 ### Automated deployment
