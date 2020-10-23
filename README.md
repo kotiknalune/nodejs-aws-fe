@@ -4,15 +4,11 @@
 
 ### Manual deployment
 
-Link to S3 bucket: [Follow link](http://rs-aws-app.s3-website-eu-west-1.amazonaws.com/)
-
-Link to CloudFront: -----
+[S3 bucket link](http://rs-aws-app.s3-website-eu-west-1.amazonaws.com/) / [CloudFront link](dc5iymr3p5a9f.cloudfront.net)
 
 ### Automated deployment
 
-Link to S3 bucket: -----
-
-Link to CloudFront: -----
+S3 bucket: ----- / CloudFront: -----
 
 ## TODO
 
@@ -22,7 +18,7 @@ Link to CloudFront: -----
 
 - [x] **Build** and **manually upload** the app to the S3 bucket. Check if the app is available
 
-- [ ] **Create** a _CloudFront distribution_ and **Check** for S3 bucket policy changes. **Check** if the app is available over given CloudFront URL
+- [x] **Create** a _CloudFront distribution_ . **Check** for S3 bucket policy changes and if the app is available over given CloudFront URL
 
 - [ ] **Make** minor but visible changes in the app, **build** and **upload** them to your bucket, and create CloudFront distribution invalidation
 
