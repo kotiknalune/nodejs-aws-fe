@@ -1,45 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Task 2: Serve SPA in AWS
 
-## Available Scripts
+## Results
 
-In the project directory, you can run:  
-You can use NPM instead of YARN (Up to you)  
+### Manual deployment
 
-### `yarn start` OR `npm run start`
+Link to S3 bucket: http://rs-aws-app.s3-website-eu-west-1.amazonaws.com/
+Link to CloudFront: -----
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Automated deployment
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Link to S3 bucket: -----
+Link to CloudFront: -----
 
-### `yarn test` OR `npm run test`
+## TODO
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2.1 Manual deployment
 
-### `yarn build` OR `npm run build`
+- [x] In the AWS Console **create** and **configure** **S3 bucket** to host SPA
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [x] **Build** and **manually upload** the app to the S3 bucket. Check if the app is available
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- [ ] **Create** a _CloudFront distribution_ and **Check** for S3 bucket policy changes. **Check** if the app is available over given CloudFront URL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [ ] **Make** minor but visible changes in the app, **build** and **upload** them to your bucket, and create CloudFront distribution invalidation
 
-### `yarn eject` OR `npm run eject`
+### 2.2 Automated deployment (serverless-finch + serverless single-page-app)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [ ]  **Add** and **configure** _serverless_ and _serverless-finch_ plugin. Add necessary npm script(s) to build and deploy your app from your machine in an automated way. (_See the_ [demo repo](https://github.com/boale/serverlessTestApp)). **Check** if everything works correctly for you. (_Please note, that after uploading an application's build to the S3 bucket you need to create manually a CloudFront invalidation_)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [ ] **Destroy** created AWS infrastructure (S3 bucket and CloudFront distribution) from the previous part and steps. **Make sure** nothing is left
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [ ] **Add** and **configure** _serverless-single-page-app-plugin_ as it is implemented in the demo repository. **Add** necessary npm script(s) to build, upload to your S3 bucket, and invalidate CloudFront cache from your machine in an automated way. Check if everything works fine and all changes appear on the Web. (_Please note, that you don’t need to manually create CloudFront invalidations any more_)
