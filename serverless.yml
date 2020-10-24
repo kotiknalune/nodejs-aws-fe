@@ -1,4 +1,4 @@
-service: rs-aws-app
+service: rs-aws-app2
 
 frameworkVersion: '2'
 
@@ -15,7 +15,7 @@ plugins:
 
 custom:
   client:
-    bucketName: rs-aws-app-automatic
+    bucketName: rs-aws-app-auto
     distributionFolder: build
     indexDocument: index.html
     manageResources: false
