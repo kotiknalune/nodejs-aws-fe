@@ -4,11 +4,11 @@
 
 ### Manual deployment
 
-[S3 bucket link](http://rs-aws-app.s3-website-eu-west-1.amazonaws.com/) / [CloudFront link](dc5iymr3p5a9f.cloudfront.net)
+[S3 bucket link](http://rs-aws-app.s3-website-eu-west-1.amazonaws.com/) / [CloudFront link](https://dc5iymr3p5a9f.cloudfront.net)
 
 ### Automated deployment
 
-S3 bucket: ----- / CloudFront: -----
+[S3 bucket link](http://rs-aws-app-automatic.s3-website-eu-west-1.amazonaws.com/) / [CloudFront link](https://d2j0w8euiob5lw.cloudfront.net)
 
 ## TODO
 
@@ -20,7 +20,7 @@ S3 bucket: ----- / CloudFront: -----
 
 - [x] **Create** a _CloudFront distribution_ . **Check** for S3 bucket policy changes and if the app is available over given CloudFront URL
 
-- [ ] **Make** minor but visible changes in the app, **build** and **upload** them to your bucket, and create CloudFront distribution invalidation
+- [x] **Make** minor but visible changes in the app, **build** and **upload** them to your bucket, and create CloudFront distribution invalidation
 
 ### 2.2 Automated deployment (serverless-finch + serverless single-page-app)
 
@@ -29,3 +29,4 @@ S3 bucket: ----- / CloudFront: -----
 - [ ] **Destroy** created AWS infrastructure (S3 bucket and CloudFront distribution) from the previous part and steps. **Make sure** nothing is left
 
 - [ ] **Add** and **configure** _serverless-single-page-app-plugin_ as it is implemented in the demo repository. **Add** necessary npm script(s) to build, upload to your S3 bucket, and invalidate CloudFront cache from your machine in an automated way. Check if everything works fine and all changes appear on the Web. (_Please note, that you don’t need to manually create CloudFront invalidations any more_)
+== 
