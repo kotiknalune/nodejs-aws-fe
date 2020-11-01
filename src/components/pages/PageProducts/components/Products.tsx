@@ -6,12 +6,11 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import {makeStyles} from '@material-ui/core/styles';
-import {Product} from "models/Product";
-import {formatAsPrice} from "utils/utils";
-import AddProductToCart from "components/AddProductToCart/AddProductToCart";
-// import axios from 'axios';
-// import API_PATHS from "constants/apiPaths";
-import productList from "./productList.json";
+import axios from 'axios';
+import {Product} from 'models/Product';
+import {formatAsPrice} from 'utils/utils';
+import AddProductToCart from 'components/AddProductToCart/AddProductToCart';
+import API_PATHS from 'constants/apiPaths';
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -36,10 +35,8 @@ export default function Products() {
   const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
-    // axios.get(`${API_PATHS.bff}/product/available/`)
-    //   .then(res => setProducts(res.data));
-    setProducts(productList);
-  }, [])
+    axios.get(`${API_PATHS.product}`).then(res => setProducts(res.data));
+  }, []);
 
   return (
     <Grid container spacing={4}>
